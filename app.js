@@ -401,7 +401,7 @@ console.log("Other Array Pointing Thirty Array -> ", thirtyModiTwo);
 
 thirtyModi.splice(0, 1);
 
-console.log("Pointing Thirty Array First Variable Modified -> ", thirtyModi);
+console.log("Pointing Thirty Array First Variable Modified  -> ", thirtyModi);
 
 console.log("Other Array  -> ", thirtyModiTwo);
 
@@ -442,7 +442,6 @@ console.log( 'Other Array -> ', uniTwo);
                 // Question No 38
 
 function humnanArr (hma){
-        
         let newArr = hma.pop();
         console.log("deleted Item -> ", newArr);
 
@@ -460,8 +459,9 @@ humnanArr(human);
         // Question No 39
 
 function changeLen (len){
+        len.length = 2;
 
-        len.length = 2;  // Changes in Array Length
+        console.log("Length Is Effected When INside A Function Arrsy Lnght is Modified -> ", len);
 }
 const lenArr = [20, 30, 40, 50, 60];
 
@@ -469,9 +469,8 @@ console.log(index + ")", "befroe Function Call", lenArr);
 
 changeLen(lenArr);
 
-console.log("Length Is Effected When INside A Function Arrsy Lnght is Modified -> ", len);
+        index ++;
 
-index ++;
                 // Question No 40
 
 const arrayOne = ["TaskOne ", "TaskTwo", "TaskThree", "TaskFour", "TaskFive"];
